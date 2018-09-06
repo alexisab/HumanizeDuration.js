@@ -285,6 +285,7 @@ Lovingly made by [Evan Hahn](http://evanhahn.com/) with help from:
 * [Caner Elci](https://github.com/canerelci) for Bulgarian support
 * [Matej Kolesár](https://github.com/rasel-sk) for Slovak support
 * [Abdul Jalil](https://github.com/abduljalilm94) for Urdu support
+* [Alexis Ablain](https://github.com/alexisab) for the addition of the `leadingZeros` option
 * Malikoun for Lao support
 
 Licensed under the permissive [Unlicense](https://unlicense.org/). Enjoy!
