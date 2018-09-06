@@ -100,6 +100,18 @@ humanizeDuration(1200, { round: true })  // '1 second'
 humanizeDuration(1600, { round: true })  // '2 seconds'
 ```
 
+**leadingZeros**
+
+Number representing the number of zeros to be added in front of units less than 10.
+
+```js
+humanizeDuration(0)                             // '0 seconds'
+humanizeDuration(1000, { leadingZeros: 1})      // '01 second'
+humanizeDuration(10000, { leadingZeros: 1})     // '10 seconds'
+humanizeDuration(301000, { leadingZeros: 1})    // '05 minutes, 01 second'
+humanizeDuration(601000, { leadingZeros: 1})    // '10 minutes, 01 second'
+```
+
 **decimal**
 
 String to substitute for the decimal point in a decimal fraction.
@@ -285,4 +297,3 @@ Related modules
 * [millisec](https://github.com/sungwoncho/millisec)
 * [HumanizeDuration.ts](https://github.com/Nightapes/HumanizeDuration.ts), a TypeScript version of this module
 * [aurelia-time](https://github.com/shahabganji/aurelia-time)
-
