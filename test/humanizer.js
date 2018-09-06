@@ -124,6 +124,17 @@ describe('humanizer', function () {
     assert.equal(h(2838550, { largest: 3 }), '47 minutes, 19 seconds')
   })
 
+  it('can change the number of leading zeros', function () {
+    var h = humanizer({ leadingZeros: 1 })
+
+    assert.equal(h(0), '00 seconds')
+    assert.equal(h(1000), '01 second')
+    assert.equal(h(10000), '10 seconds')
+    assert.equal(h(301000), '05 minutes, 01 second')
+    assert.equal(h(605000), '10 minutes, 05 seconds')
+    assert.equal(h(610000), '10 minutes, 10 seconds')
+  })
+
   it('can ask for the largest units', function () {
     var h = humanizer({ largest: 2 })
 

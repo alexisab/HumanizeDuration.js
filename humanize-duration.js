@@ -452,6 +452,7 @@
       units: ['y', 'mo', 'w', 'd', 'h', 'm', 's'],
       languages: {},
       round: false,
+      leadingZeros: 0,
       unitMeasures: {
         y: 31557600000,
         mo: 2629800000,
@@ -564,6 +565,12 @@
     }
 
     var countStr = count.toString().replace('.', decimal)
+
+    if (count < 10) {
+      for (var i = 0; i < options.leadingZeros; i++) {
+        countStr = '0' + countStr
+      }
+    }
 
     var dictionaryValue = dictionary[type]
     var word
