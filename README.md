@@ -100,16 +100,17 @@ humanizeDuration(1200, { round: true })  // '1 second'
 humanizeDuration(1600, { round: true })  // '2 seconds'
 ```
 
-**leadingZeros**
+**padUnits**
 
-Number representing the number of zeros to be added in front of units less than 10.
-
+Number representing the final size of the digits (enlarged with 0).
 ```js
-humanizeDuration(0)                             // '0 seconds'
-humanizeDuration(1000, { leadingZeros: 1})      // '01 second'
-humanizeDuration(10000, { leadingZeros: 1})     // '10 seconds'
-humanizeDuration(301000, { leadingZeros: 1})    // '05 minutes, 01 second'
-humanizeDuration(601000, { leadingZeros: 1})    // '10 minutes, 01 second'
+humanizeDuration(0)                          // '0 seconds'
+humanizeDuration(1000, { padUnits: 2 })      // '01 second'
+humanizeDuration(10000, { padUnits: 2 })     // '10 seconds'
+humanizeDuration(301000, { padUnits: 2 })    // '05 minutes, 01 second'
+humanizeDuration(601000, { padUnits: 2 })    // '10 minutes, 01 second'
+
+humanizeDuration(1000, { padUnits: 3 })      // '000 seconds'
 ```
 
 **decimal**

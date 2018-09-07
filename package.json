@@ -1,5 +1,5 @@
 {
-  "name": "humanize-duration",
+  "name": "@alexisab/humanize-duration",
   "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
   "contributors": [
     "Óli Tómas Freysson (https://github.com/olitomas)",
@@ -26,7 +26,7 @@
     "Alex Sam (https://github.com/sam-lex)",
     "Alexis Ablain (https://github.com/alexisab)"
   ],
-  "version": "3.16.0",
+  "version": "3.16.1",
   "description": "Convert millisecond durations to English and many other languages.",
   "homepage": "https://github.com/EvanHahn/HumanizeDuration.js",
   "main": "humanize-duration.js",
